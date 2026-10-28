@@ -1,0 +1,621 @@
+
+/* =================================
+   1. CONFIGURACIÓN GENERAL
+================================= */
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f4f8f5;
+    color: #24382c;
+}
+
+img,
+video,
+iframe {
+    max-width: 100%;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 1.25;
+    margin-bottom: 12px;
+    color: #173d2b;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #173d2b;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #287a4b;
+    color: white;
+    border: 2px solid #287a4b;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin-top: 12px;
+    font-weight: bold;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.boton:hover {
+    background-color: #173d2b;
+    border-color: #173d2b;
+    transform: translateY(-2px);
+}
+
+
+
+.subtitulo {
+    color: #287a4b;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.titulo {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 30px;
+}
+
+
+.seccion {
+    padding: 55px 20px;
+}
+
+.seccion-alterna {
+    background-color: #e8eee9;
+}
+
+
+/* =================================
+   2. ENCABEZADO Y NAVEGACIÓN
+================================= */
+
+.encabezado {
+    background-color: #607469;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.encabezado-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 20px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.logo strong {
+    color: #a8e2b9;
+}
+
+.logo img{
+    width: 100px;
+    height: auto;
+
+}
+
+
+
+.navegacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.navegacion a {
+    display: block;
+    color: white;
+    font-size: 12px;
+    padding: 9px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.navegacion a:hover,
+.navegacion a:focus-visible {
+    background-color: #287a4b;
+    color: white;
+}
+
+
+/* =================================
+   3. SECCIÓN DE INICIO
+================================= */
+
+.inicio {
+    background: linear-gradient(
+        110deg,
+        rgba(23, 61, 43, 0.97),
+        rgba(23, 61, 43, 0.82)
+    );
+    color: white;
+    padding: 45px 20px;
+}
+
+.inicio-contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.inicio-texto {
+    flex: 1;
+}
+
+.inicio-texto h1 {
+    color: white;
+}
+
+.inicio-texto p {
+    max-width: 620px;
+}
+
+.categorias {
+    color: #a8e2b9;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.datos-evento {
+    border-left: 4px solid #7acb94;
+    padding-left: 14px;
+    margin-top: 22px;
+}
+
+.inicio .boton {
+    background-color: #a8e2b9;
+    border-color: #a8e2b9;
+    color: #173d2b;
+}
+
+.inicio .boton:hover {
+    background-color: white;
+    border-color: white;
+}
+
+.inicio-imagen {
+    flex: 1;
+    min-width: 0;
+}
+
+.inicio-imagen img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 3px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =================================
+   4. BENEFICIOS
+================================= */
+
+.beneficios {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.beneficio {
+    background-color: white;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #d7e5da;
+    text-align: center;
+}
+
+.beneficio-icono {
+    display: inline-grid;
+    place-items: center;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 12px;
+    border-radius: 50%;
+    background-color: #dff3e5;
+    color: #287a4b;
+    font-weight: bold;
+}
+
+.beneficio h3 {
+    margin-bottom: 6px;
+}
+
+.beneficio p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
+/* =================================
+   5. TARJETAS DE PROYECTOS
+================================= */
+
+.proyectos-rejilla {
+    display: grid;
+    gap: 22px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    min-width: 0;
+    background-color: white;
+    border: 1px solid #d7e5da;
+    border-radius: 14px;
+}
+
+.card:hover {
+    box-shadow: 0 10px 24px rgba(23, 61, 43, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.card-contenido {
+    padding: 22px;
+}
+
+.card-contenido h3 {
+    margin-top: 12px;
+}
+
+.card-contenido p {
+    font-size: 14px;
+}
+
+.etiqueta {
+    display: inline-block;
+    background-color: #dff3e5;
+    color: #205d39;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.enlace-card {
+    display: inline-block;
+    color: #287a4b;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.enlace-card:hover {
+    color: #173d2b;
+    text-decoration: underline;
+}
+
+
+/* =================================
+   6. CRONOGRAMA
+================================= */
+
+.tabla-contenedor {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow-x: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(23, 61, 43, 0.07);
+}
+
+.tabla-cronograma {
+    width: 100%;
+    min-width: 540px;
+    text-align: left;
+}
+
+.tabla-cronograma caption {
+    padding: 15px;
+    font-weight: bold;
+    color: #173d2b;
+    text-align: left;
+}
+
+.tabla-cronograma th {
+    background-color: #173d2b;
+    color: white;
+}
+
+.tabla-cronograma th,
+.tabla-cronograma td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #d7e5da;
+}
+
+
+
+/* =================================
+   7. LISTAS DE PARTICIPACIÓN
+================================= */
+
+.participacion-rejilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bloque-informacion {
+    background-color: white;
+    border: 1px solid #d7e5da;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.lista-ordenada,
+.lista-desordenada {
+    padding-left: 24px;
+    margin-bottom: 0;
+}
+
+.lista-ordenada li,
+.lista-desordenada li {
+    margin-bottom: 10px;
+    padding-left: 4px;
+}
+
+.lista-ordenada li,
+.lista-desordenada li {
+    color: #287a4b;
+    font-weight: bold;
+}
+
+
+/* =================================
+   8. VIDEO Y MAPA
+================================= */
+
+.multimedia-rejilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.multimedia-bloque {
+    min-width: 0;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #d7e5da;
+    border-radius: 12px;
+}
+
+.video-evento,
+.mapa {
+    display: block;
+    width: 100%;
+    height: 250px;
+    border: 0;
+    border-radius: 8px;
+}
+
+.video-evento {
+    background-color: #173d2b;
+    object-fit: contain;
+}
+
+.multimedia-bloque p {
+    margin-top: 12px;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+
+/* =================================
+   9. FORMULARIO
+================================= */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.formulario .boton {
+    background-color: #287a4b;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.formulario .opcion {
+    display: flex;
+    gap: 8px;
+}
+
+/* =================================
+   10. PIE DE PÁGINA
+================================= */
+
+.pie-pagina {
+    background-color: #173d2b;
+    color: white;
+    text-align: center;
+    padding: 22px 20px;
+    font-size: 13px;
+}
+
+.pie-pagina p {
+    margin-bottom: 8px;
+}
+
+.pie-pagina a {
+    color: #a8e2b9;
+    font-weight: bold;
+}
+
+.pie-pagina a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* =================================
+   11. TABLET
+================================= */
+
+@media (min-width: 600px) {
+
+    .encabezado-contenido {
+        padding: 14px 25px;
+    }
+
+    .navegacion {
+        gap: 8px;
+    }
+
+    .navegacion a {
+        font-size: 13px;
+    }
+
+    .beneficios {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 35px 25px;
+    }
+
+    .proyectos-rejilla {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .participacion-rejilla {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .multimedia-rejilla {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .formulario {
+        padding: 30px;
+    }
+}
+
+
+/* =================================
+   12. COMPUTADOR
+================================= */
+
+@media (min-width: 900px) {
+
+    .encabezado-contenido {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .navegacion {
+        justify-content: flex-end;
+    }
+
+    .inicio {
+        padding: 65px 35px;
+    }
+
+    .inicio-contenido {
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .inicio-texto,
+    .inicio-imagen {
+        flex: 1;
+    }
+
+    .inicio-imagen img {
+        height: 400px;
+    }
+
+    h1 {
+        font-size: 52px;
+    }
+
+    .beneficios {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .proyectos-rejilla {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .seccion {
+        padding: 70px 35px;
+    }
+}
